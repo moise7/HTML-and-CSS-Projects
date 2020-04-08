@@ -1,0 +1,28 @@
+body{
+  font-style: italic;
+  text-align: center;
+}
+.class_a{
+  color: blue;
+}
+table{
+  border: 1px solid silver;
+}
+td:hover{
+  background-color: yellow;
+  color: black;
+}
+tr,th{
+  background-color: black;
+  color: inherit;
+}
+tr,td{
+  background-color: red;
+  color: white;
+}
+ol{
+  list-style-type: lower-latin;
+}
+ul{
+  list-style-type: square;
+}
