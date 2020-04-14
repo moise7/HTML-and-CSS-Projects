@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+.menubar {
+    overflow: hidden;
+    background-color: red;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.menubar a{
+    float: left;
+    display: block;
+    color: seashell;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-family: "Lucida Console", Courier,monospace;
+    font-size: 20px;
+    text-align: center;
+}
+.menubar a:hover {
+    background-color: silver;
+    color: black;
+    font-weight: bold;
+}
+.menubar a.active{
+    background-color:black;
+}
+security{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+.text_video {
+    background: rgba(0,0,0,0.5);
+    color:black;
+    width: 100%;
+    padding: 20px;
+    margin-top: 23%;
+    box-sizing: border-box
+}
+.Column1{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #b9a2a2;
+}
+.Column3{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #b9a2a2;
+}
+.Column3{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3.5%;
+    height: 450px;
+    background-color: #b9a2a2;
+}
