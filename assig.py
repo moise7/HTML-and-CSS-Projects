@@ -15,8 +15,13 @@ conn.close()
 
 conn = sqlite3.connect('name.db')
 fileList = ['information.docx','Hello.txt','myImage.png','myMovie.mpg','World.txt','data.pdf','myPhoto.jpg']
- for name in fileList:
+for name in fileList:
      print(name)
-     cur.execute("INSERT INTO tbl_list(fileList)VALUES()",)
-
-     Page number(Step 162)
+     cur.execute("INSERT INTO tbl_list(col_document)VALUES(?)","(name,))")
+     
+     conn.commit()
+conn.close()
+with conn:
+    cur = conn.cursor()
+    cur.execute("SELECT .txt, FROM tbl_list WHERE col_document = 'name'")
+   
