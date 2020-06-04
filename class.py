@@ -6,3 +6,7 @@ class Car_user:
 class Customer(Car_user):
     car_payment = 119.00
     mailing_address = ' '
+
+class payment_update(Customer):
+    month = June
+    name = ''
