@@ -9,6 +9,7 @@ class Cars:
     model = ['Ferrari','Ford','Lambo']
     Years = ['2017','2019','2020']
 
+#Creating the child
 class User(Customer):
     name = 'Luke'
     email = "luke@hotmail.com"
