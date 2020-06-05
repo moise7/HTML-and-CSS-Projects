@@ -14,6 +14,14 @@ class User(Customer):
     name = 'Luke'
     email = "luke@hotmail.com"
     phone = "1234567890"
+    def getInfo(self):
+        name = input("Enter your name: ")
+        email = input("Enter your email: ")
+        phone = input("Enter phone number: ")
+        if(email == self.email and number == self.number):
+            print("We will be with you!!")
+        else:
+            print("Try again")
 
 class payment(Cars):
     monthly_payment = 230
