@@ -4,10 +4,15 @@ class Customer:
     name = "luke"
     email = "luke@hotmail.com"
     phone = "1234567890"
-
-class Cars:
-    model = ['Ferrari','Ford','Lambo']
-    Years = ['2017','2019','2020']
+    
+    def getInfo(self):
+        name = input("Enter your name: ")
+        email = input("Enter your email: ")
+        phone = input("Enter phone number: ")
+        if(email == self.email and phone == self.phone):
+            print("We will be with you!!")
+        else:
+            print("Try again")
 
 #Creating the child
 class User(Customer):
@@ -18,25 +23,25 @@ class User(Customer):
         name = input("Enter your name: ")
         email = input("Enter your email: ")
         phone = input("Enter phone number: ")
-        if(email == self.email and number == self.number):
+        if(email == self.email and phone == self.phone):
             print("We will be with you!!")
         else:
             print("Try again")
 
-class payment(Cars):
+class payment(Customer):
     monthly_payment = 230
-    name = 'Luke'
+    id_number = '12345'
     def getInfo(self):
         name = input("Enter your name: ")
         email = input("Enter your email: ")
-        phone = input("Enter phone number: ")
-        if(email == self.email and number == self.number):
-            print("We will be with you!!")
+        payment = input("Enter the amount pay: ")
+        if(email == self.email and name == self.name):
+            print("{}, We will be with you!!")
         else:
             print("Try again")
 customer = User()
 customer.getInfo()
 
 
-cars = payment()
-cars.getInfo()
+Cars = payment()
+Cars.getInfo()
