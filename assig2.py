@@ -34,9 +34,9 @@ class payment(Customer):
     def getInfo(self):
         name = input("Enter your name: ")
         email = input("Enter your email: ")
-        payment = input("Enter the amount pay: ")
-        if(email == self.email and name == self.name):
-            print("{}, We will be with you!!")
+        id_number = input("Enter your id number: ")
+        if(email == self.email and id_number == self.id_number):
+            print("{}, We will be with you!!".format(name))
         else:
             print("Try again")
 customer = User()
