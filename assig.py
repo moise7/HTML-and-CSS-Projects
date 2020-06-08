@@ -16,8 +16,7 @@ with conn:
 conn = sqlite3.connect('name.db')
 fileList = ['information.docx','Hello.txt','myImage.png','myMovie.mpg','World.txt','data.pdf','myPhoto.jpg']
 for name in fileList:
-     if txt = ('Hello.txt','World.txt')
-     name = txt.endswith("txt.")
+     if (name.endswith("txt."))
      print(name)
      cur.execute("INSERT INTO tbl_list(col_document)VALUES(?)",(str.split(name)))
      
