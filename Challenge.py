@@ -25,7 +25,7 @@ with conn:
 conn = sqlite3.Connection('roster.db')
 with conn:
     cur = conn.cursor()
-    cur.execute("INSERT INTO tbl_list(col_Name)VALUES()",\
+    cur.execute("INSERT INTO tbl_list(col_Name)VALUES(?,?,?)",\
                 ('Jean-Baptiste Zorg', 'Korben Dallas','Aknot'))
 
 
