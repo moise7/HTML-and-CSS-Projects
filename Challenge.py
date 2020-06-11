@@ -25,10 +25,17 @@ with conn:
 conn = sqlite3.Connection('roster.db')
 with conn:
     cur = conn.cursor()
-    cur.execute("INSERT INTO tbl_list(col_Name)VALUES(?,?,?)",\
-                ('Jean-Baptiste Zorg', 'Korben Dallas','Aknot'))
+    cur.execute("INSERT INTO tbl_list(col_Name,col_Species , col_IQ)VALUES(?,?,?)",\
+                ('Jean-Baptiste Zorg', 'Human','122'))
 
-
+cur.execute("INSERT INTO tbl_list(col_Name,col_Species , col_IQ)VALUES(?,?,?)",\
+                ('Korben Dallas', 'Meat Popsicle','100'))
+cur.execute("INSERT INTO tbl_list(col_Name,col_Species , col_IQ)VALUES(?,?,?)",\
+                ('Ak''s''not','Human','122'))
+#Update the Species of Korben Dallas to be Human
+cur.execute("UPDATE col_Species SET Meat Popsicle = Human")
+#Display the names IQs of everyone in the table who is classified as Human
+print("Names IQs are:  ",(col_IQ))
 
 
 
