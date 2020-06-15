@@ -2,9 +2,9 @@ import shutil
 import os
 
 #set where the source of the file are
-source = 'C:\Users\MB New Vision\Desktop\A'
+source = '/C:/Users/MBNewVision/Desktop/A/'
 
-destination = 'C:\Users\MB New Vision\Desktop\B'
+destination = '/C:/Users/MBNewVision/Desktop/B'
 files = os.listdir(source)
 
 for i in files:
