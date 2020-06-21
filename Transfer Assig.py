@@ -15,6 +15,7 @@ for i in files:
     #we are saying move the files represented by 'i' to their new destination
     shutil.move(source+i, destination)
 modification_time = os.listdir.getmtime(source,destination)
+print(os.path.join(path, 'C:\python_projects\Transfer\A', "file.txt")) 
 print("modified in the last 24 hours",access_time)
 
 local_time = time.ctime(modification_time)
@@ -36,4 +37,8 @@ r2=Radiobutton(window, text="File Check", variable=v0,value=2)
 
 
 if __name__ == "__main__main":
-    pass()
+    root = tk.Tk()
+    App = ParentWindow(root)
+    root.mainloop()
+
+ 
