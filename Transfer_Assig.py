@@ -1,7 +1,7 @@
 import shutil
 import os
 import time
-import tkinter
+import tkinter as tk
 from tkinter import*
 
 
@@ -57,7 +57,15 @@ class ParentWindow(Frame):
         self.btnCancel = Button(self.master, text="Close Program", font=("", 14), command=self.cancel)
         self.btnCancel.grid(row=6, column=2, padx=(0,0), pady=(30,0), sticky=SE)
 
-if __name__ == "__main__main":
+        def submit(self):
+            browser = self.varBrowse1.get()
+            browser1 = self.varBrowse2.get()
+            self.lblDisplay.config(text='Hello {} {}'.format(fn,ln))
+
+    def cancel(self):
+        self.master.destroy() 
+
+if __name__ == "__main__":
     root = tk.Tk()
     App = ParentWindow(root)
     root.mainloop()
