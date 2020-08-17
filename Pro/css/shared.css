@@ -7,8 +7,8 @@ html {
 font-family: san-serif;
 font-size: 62.5%;
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
--webkit-text-size-adjust: 100%;
--ms-text-size-adjust 100%;
+-webkit-text-size-adjust 100%;
+-ms-text-size-adjust: 100%;
 }
 
 body{
@@ -37,12 +37,12 @@ h1 {
 }
 h1::after{/*This is the underline*/
     display: block;
-    content: **;
+    content: "'";
     height: 2px;
     width: 150px;
     background: #E91C1C;
     margin: 5px auto 40px;
-    box-shadow: 5px 2px 3px rgba(0,0,0,0.5)
+    box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
 }
 h2 {
     line-height: 50px;
@@ -124,7 +124,7 @@ section {
 }
 /*HOME SECTION STYLES*/
 #home {
-    background: url(./Images/bangui.jpg) no-repeat 504 50%;
+    background: url(../Images/bangui.jpg) no-repeat 504 50%;
     background-attachment: fixed;
     -webkit-backdrop-size: cover;
     -moz-background-size: cover;

@@ -1,0 +1,13 @@
+/*-----------------------------------
+GALEERY SECTION ANIMATION
+----------------------------------*/
+p {
+font-weight: 300px;
+line-height: 30px;
+padding-bottom: 15px;
+}
+.photo{
+    position: relative;
+    line-height: 0;
+    
+}
