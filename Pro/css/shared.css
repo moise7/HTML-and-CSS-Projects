@@ -4,11 +4,11 @@ Author: Moise Ngoumape
 Gereric Style
 -----------------------------------*/
 html {
-font-family: san-serif;
-font-size: 62.5%;
--webkit-tap-highlight-color: rgba(0, 0, 0, 0)
--webkit-text-size-adjust 100%;
--ms-text-size-adjust: 100%;
+    font-family: sans-serif;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 body{
@@ -37,7 +37,7 @@ h1 {
 }
 h1::after{/*This is the underline*/
     display: block;
-    content: "'";
+    content: "";
     height: 2px;
     width: 150px;
     background: #E91C1C;
@@ -124,7 +124,7 @@ section {
 }
 /*HOME SECTION STYLES*/
 #home {
-    background: url(../Images/bangui.jpg) no-repeat 504 50%;
+    background: url(../Images/bangui.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-backdrop-size: cover;
     -moz-background-size: cover;
@@ -185,7 +185,7 @@ section {
     border-radius: 8px;
     margin: 0px auto;
     background-color: rgba(100,65,0,.3);
-    box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1);
+    box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
 }
 .reservation h2{
     width: 70%;
@@ -208,7 +208,7 @@ section {
     letter-spacing: .4pt;
     word-spacing: .3pt;
 }
-.reservation{
+.reservation p {
     color: #13161b;
     width: 50%;
     margin: 0 auto;
@@ -277,7 +277,7 @@ section {
    margin: 0px 3%;
    padding: 7px 0px;
    width: 25%;
-   font-size: 18px;
+   font-size: 10px;
    transition: border-color 0.3s color 0.3s background-color 0.3s;
    border-radius: 7px;
    background-color: #797a7b;
