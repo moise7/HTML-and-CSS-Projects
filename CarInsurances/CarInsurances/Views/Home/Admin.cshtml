@@ -1,0 +1,27 @@
+﻿@model CarInsurances.Models.Insuree
+
+@{
+    ViewBag.Title = "Admin";
+}
+
+<h2>Admin</h2>
+
+<div>
+    <h4>Insuree</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </dt>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
