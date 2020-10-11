@@ -57,9 +57,66 @@ namespace CarInsurances.Controllers
                 {
                     insuree.Quote += 100;
                 }
-                db.Insurees.Add(insuree);
+                //If the user is between 19 and 25, add $50 to the monthly total
+                if (age> 19 && age < 25)
+                {
+                    insuree.Quote += 50;
+                }
+
+                //If the user is over 25, add $25 to the monthly total
+                if (age >= 25)
+                {
+                    insuree.Quote += 25;
+                }
+                //If the car's year is before 2000, add $25 to the monthly total
+                int car = DateTime.Now.Year;
+                if(insuree.CarYear <2000)
+
+                {
+                    insuree.Quote += 25;
+                }
+
+                //If the car's year is after 2015, add $25 to the monthly total
+                if (insuree.CarYear >2015 )
+                {
+                    insuree.Quote += 25;
+                }
+
+                //If the car's Make is a Porsche, add $25 to the price
+
+                if (insuree.CarMake == "Porsche")
+                {
+                    insuree.Quote += 25;
+                }
+                    // If the car's Make is a Porsche and its model is a 911 Carrera, add an additional $25 to the price
+                    if(insuree.CarMake == "Porsche" && insuree.CarModel == "911 Carrera")
+                        {
+                    insuree.Quote += 25;
+                }
+
+                //Add $10 to the monthly total for every speeding ticket the user has
+                if (insuree.SpeedingTickects >=1)
+                {
+                    insuree.Quote += 10;
+                }
+
+                    //If the user has ever had a DUI, add 25% to the total
+                    if(insuree.DUI)
+                {
+                    insuree.Quote += 25/100;
+                }
+
+
+                //If it's full coverage, add 50% to the total
+                if (insuree.CoverageType)
+                {
+                    insuree.Quote += 50 / 100;
+                }
+
+                    db.Insurees.Add(insuree);
                 db.SaveChanges();
                 return RedirectToAction("index");
+                
             }
 
             return View(insuree);

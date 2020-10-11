@@ -24,9 +24,15 @@ for i in files:
 
 #Creating UI that contain the files to be checked daily
         #First
+def Browser1(txtBrowser1):{
+    askdirectory()
+    }
+    
+        
 class ParentWindow(Frame):
     def __init__(self, master):
         Frame.__init__(self)
+    
 
         self.master = master
         self.master.resizable(width=False, height=False)
@@ -39,10 +45,10 @@ class ParentWindow(Frame):
         self.lblDisplay = Label(self.master,text='Daily', font=("Helvetica", 14))
         self.lblDisplay.grid(row=0, column=0, padx=(30,0), pady=(30,0))
 
-        self.btnBrowse1 = Button(self.master,text='Receive', font=("Helvetica", 14), command=self.Browse1)
+        self.btnBrowse1 = Button(self.master,text='Receive', font=("Helvetica", 14), command=self.Browser1)
         self.btnBrowse1.grid(row=3, column=0, padx=(30,0), pady=(30,0), sticky=W)
 
-        self.btnBrowse2 = Button(self.master,text='File Check', font=("Helvetica", 14), command=self.Browse2)
+        self.btnBrowse2 = Button(self.master,text='File Check', font=("Helvetica", 14), command=self.Browser2)
         self.btnBrowse2.grid(row=4, column=0, padx=(30,0), pady=(30,0), sticky=W)
 
         self.txtBrowse1 = Entry(self.master,text=self.varBrowse1, font=("Helvetica", 16), fg='black', bg='white')
